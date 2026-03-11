@@ -1,0 +1,122 @@
+/* Flex layout for card */
+
+@font-face {
+  font-family: 'Glacial Indifference Bold'; /* A name you choose for your font */
+  src: url('/assets/GlacialIndifference-Bold.otf') format('otf')
+}
+
+@font-face {
+  font-family: 'Glacial Indifference'; /* A name you choose for your font */
+  src: url('/assets/GlacialIndifference-Regular.otf') format('otf')
+}
+
+.logo{
+  width: 45%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.card-flex {
+  display: flex;
+  align-items: flex-start;
+}
+.card .photo {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 10px;
+  flex-shrink: 0;
+  aspect-ratio: 1 / 1; /* Forces a perfect square (1:1 ratio) */
+  object-fit: cover;  /* Ensures the image fills the container without distortion or empty space, cropping if necessary */
+  object-position: center;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+}
+.inquire-btn {
+  margin:auto;
+  padding: 8px 18px;
+  background: #ffffff;
+  color: #000000;
+  border: 1px,solid, #000000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.inquire-btn:hover {
+  background: #005a40;
+}
+/* Card styles for catalogue items */
+.card {
+  border-radius: 8px;
+  margin: 16px auto;
+  width: 80%;
+  background: #fff;
+}
+
+.artist{
+  font-weight: bold;
+  margin: 2px
+}
+
+/* .name {
+  margin: 2px;
+}
+
+.material {
+  color: #555;
+  margin: 2px;
+}
+
+.material {
+  color: #555;
+  margin: 2px;
+} */
+
+.availability {
+  color: #888;
+  font-size: 0.95em;
+  margin:2px
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Glacial Indifference', sans-serif;
+  font-size: 0.9em;
+}
+
+canvas {
+  display: block;
+}
+
+.title{
+  margin: auto;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+}
+
+.horizontal{
+  display: flex;
+  flex-direction: row;
+}
+
+p{
+  margin: 2px;
+}
+
+.message{
+  width: 90%;
+  margin: auto;
+}
+
+.message p{
+  font-weight: bold;
+  color: #a6a6a6;
+}
