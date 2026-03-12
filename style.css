@@ -23,7 +23,9 @@
 .card-flex {
   display: flex;
   align-items: flex-start;
+  width: 100%;
 }
+
 .card .photo {
   width: 25%;
   height: auto;
@@ -56,19 +58,16 @@
 .card {
   border-radius: 8px;
   margin: 16px auto;
-  width: 80%;
-  background: #fff;
+  width: 85%;
 }
 
 .artist{
   font-weight: bold;
-  margin: 2px
 }
 
 .availability {
   color: #888;
   font-size: 0.95em;
-  margin:2px
 }
 
 html, body {
@@ -95,7 +94,7 @@ canvas {
 }
 
 p{
-  margin: 2px;
+  margin: 1px;
 }
 
 .message{
