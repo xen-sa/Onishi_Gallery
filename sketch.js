@@ -30,7 +30,7 @@ function handleResponse(csvText) {
           <p class="name">${obj.Name || ''}</p>
           <p class="material">${obj.Material || ''}</p>
           <p class="size">${obj.Size || ''}</p>
-          <p class="availability">${obj.Availability || ''}</p>
+          <p class="availability${obj.Availability === 'Not available' ? ' not-available' : ''}">${obj.Availability || ''}</p>
         </div>
         ${inquireHTML}
       </div>

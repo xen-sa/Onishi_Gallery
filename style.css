@@ -1,3 +1,6 @@
+.not-available {
+  color: rgb(144, 48, 48) !important;
+}
 /* Flex layout for card */
 
 @font-face {
@@ -22,7 +25,7 @@
   align-items: flex-start;
 }
 .card .photo {
-  width: 120px;
+  width: 25%;
   height: auto;
   object-fit: cover;
   margin-right: 10px;
@@ -37,20 +40,18 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex: 1;
+  width: 50%;
 }
 .inquire-btn {
   margin:auto;
-  padding: 8px 18px;
+  padding: 8px 10px;
   background: #ffffff;
   color: #000000;
   border: 1px,solid, #000000;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.2s;
 }
-.inquire-btn:hover {
-  background: #005a40;
-}
+
 /* Card styles for catalogue items */
 .card {
   border-radius: 8px;
@@ -64,20 +65,6 @@
   margin: 2px
 }
 
-/* .name {
-  margin: 2px;
-}
-
-.material {
-  color: #555;
-  margin: 2px;
-}
-
-.material {
-  color: #555;
-  margin: 2px;
-} */
-
 .availability {
   color: #888;
   font-size: 0.95em;
@@ -88,7 +75,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Glacial Indifference', sans-serif;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 canvas {
